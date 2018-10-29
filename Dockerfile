@@ -15,4 +15,4 @@ VOLUME ["/var/spool/apt-mirror"]
 RUN echo "0 4 * * * root /usr/bin/apt-mirror > /var/spool/apt-mirror/cron.log" >> /etc/cron.d/apt-mirror
 
 RUN chmod +x docker-entrypoint.sh
-CMD ["docker-entrypoint.sh"]
+CMD ["/docker-entrypoint.sh"]
