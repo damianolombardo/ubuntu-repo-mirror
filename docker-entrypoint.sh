@@ -6,5 +6,5 @@ update-rc.d proftpd enable
 
 apt-mirror
 
-proftpd -f
+proftpd -n
 
